@@ -11,7 +11,7 @@
                             :disabled="addFantomMainnetInProgress"
                             @click="onAddChainClick('mainnet')"
                         >
-                            Add Fantom Opera Mainnet
+                            Add Zilionixx Opera Mainnet
                             <pulse-loader v-if="addFantomMainnetInProgress" color="#fff"></pulse-loader>
                         </button>
                         <button
@@ -20,7 +20,7 @@
                             :disabled="addFantomTestnetInProgress"
                             @click="onAddChainClick('testnet')"
                         >
-                            Add Fantom Testnet
+                            Add Zilionixx Testnet
                             <pulse-loader v-if="addFantomTestnetInProgress" color="#1969ff"></pulse-loader>
                         </button>
                     </div>

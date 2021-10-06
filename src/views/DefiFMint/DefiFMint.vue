@@ -1,6 +1,6 @@
 <template>
     <div class="view-defi-fmint">
-        <h1 class="with-back-btn">fMint</h1>
+        <h1 class="with-back-btn">zMint</h1>
 
         <h2 class="perex">Manage your collateral and minted synths</h2>
 
@@ -156,7 +156,7 @@
 
         <f-tabs>
             <template #fmint-overview>
-                fMint Overview
+                zMint Overview
                 <span class="f-records-count">({{ fMintOverviewRecordsCount }})</span>
             </template>
             <template #collateral-positions>

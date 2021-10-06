@@ -121,18 +121,18 @@ export default {
                 },
                 {
                     url: {
-                        name: 'fmint',
+                        name: 'zmint',
                     },
-                    title: 'fMint',
+                    title: 'zMint',
                     icon: fmintIcon,
                     fillColor: true,
                     fmintLink: true,
                 },
                 {
                     url: {
-                        name: 'fswap',
+                        name: 'zswap',
                     },
-                    title: 'fSwap',
+                    title: 'zSwap',
                     icon: swapIcon,
                     fill: true,
                     fswapLink: true,
@@ -148,9 +148,9 @@ export default {
                 },*/
                 {
                     url: {
-                        name: 'funiswap',
+                        name: 'zuniswap',
                     },
-                    title: 'fUNI',
+                    title: 'zUNI',
                     icon: funiIcon,
                     fill: true,
                     fUniswapLink: true,

@@ -163,8 +163,8 @@ export const routes = [
                 component: Staking,
             },
             {
-                name: 'fmint',
-                path: '/fmint/:address',
+                name: 'zmint',
+                path: '/zmint/:address',
                 component: FMint,
                 children: [
                     {
@@ -339,8 +339,8 @@ export const routes = [
                 ],
             },
             {
-                name: 'fswap',
-                path: '/fswap/:address',
+                name: 'zswap',
+                path: '/zswap/:address',
                 component: FSwap,
                 children: [
                     {
@@ -471,8 +471,8 @@ export const routes = [
                 ],
             },*/
             {
-                name: 'funiswap',
-                path: '/funi/:address',
+                name: 'zuniswap',
+                path: '/zuni/:address',
                 component: FUniswap,
                 children: [
                     {

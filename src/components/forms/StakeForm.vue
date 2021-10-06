@@ -6,7 +6,7 @@
                     <legend class="h2">
                         <div class="cont-with-back-btn">
                             <span
-                                >Delegate FTM <span class="f-steps"><b>1</b> / 2</span></span
+                                >Delegate ZNX <span class="f-steps"><b>1</b> / 2</span></span
                             >
                             <a
                                 href="#"

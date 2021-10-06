@@ -7,7 +7,7 @@
                     <h3 class="align-center-lg">
                         <span>
                             <f-t-m-token-value :value="accountBalance" convert no-currency />
-                            <span class="ftm"> FTM</span>
+                            <span class="ftm"> ZNX</span>
                         </span>
                     </h3>
                     <div class="currency">
@@ -23,7 +23,7 @@
                     <h3 class="align-center-lg">
                         <span>
                             <f-t-m-token-value :value="accountTotalBalance" convert no-currency />
-                            <span class="ftm"> FTM</span>
+                            <span class="ftm"> ZNX</span>
                         </span>
                     </h3>
                     <div class="currency">

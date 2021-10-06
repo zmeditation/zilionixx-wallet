@@ -10,7 +10,8 @@ const appConfig = {
         // list of providers. if one of them is unavailable, another is randomly picked
         providers: [
             {
-                http: 'https://xapi-nodea.fantom.network/',
+                // http: 'https://xapi-nodea.fantom.network/',
+                http: 'http://173.225.107.199:443',
                 // for subscriptions
                 ws: '',
             },
@@ -19,9 +20,10 @@ const appConfig = {
         defaultProviderIndex: 'random',
     },
     // Opera chain id
-    chainId: '0x5a',
+    chainId: '0x5D',
     // JSON-RPC endpoint
-    rpc: 'http://127.0.0.1:8001',
+    // rpc: 'http://127.0.0.1:8001',
+    rpc: 'http://173.225.107.199:443',
     // used in links pointing to fantom explorer
     explorerUrl: 'http://127.0.0.1:3000',
     // used in links pointing to validators
