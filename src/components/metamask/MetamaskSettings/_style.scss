@@ -1,0 +1,13 @@
+.metamasksettings {
+    &_section {
+        margin-bottom: 8px;
+
+        h3 {
+            margin-bottom: 8px;
+        }
+    }
+
+    &_section + .metamasksettings_section {
+        margin-top: 24px;
+    }
+}
