@@ -19,7 +19,7 @@
             <div class="body">
                 <div class="logo">
                     <router-link to="/" class="logo-link">
-                        <img src="@/assets/img/zilion.png" width="50" height="50" />
+                        <img src="favicon.png" width="50" height="50" />
                         <span class="wallet-label">zWallet</span>
                     </router-link>
                 </div>

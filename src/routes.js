@@ -12,7 +12,7 @@ import LedgerAccounts from './views/LedgerAccounts/LedgerAccounts.vue';
 import AccountHistory from './views/AccountHistory/AccountHistory.vue';
 import Settings from './views/Settings/Settings.vue';
 import Wallet from './views/Wallet/Wallet.vue';
-import DefiFMint from './views/DefiFMint/DefiFMint.vue';
+import DefiZMint from './views/DefiZMint/DefiZMint.vue';
 import DefiDepositFTM from './views/DefiDepositFTM/DefiDepositFTM.vue';
 import DefiBorrowFUSD from './views/DefiBorrowFUSD/DefiBorrowFUSD.vue';
 import DefiDepositFTMConfirmation from './views/DefiDepositFTMConfirmation/DefiDepositFTMConfirmation.vue';
@@ -30,8 +30,8 @@ import DefiUnlock from '@/views/DefiUnlock/DefiUnlock.vue';
 import DefiMint from '@/views/DefiMint/DefiMint.vue';
 import DefiRepay from '@/views/DefiRepay/DefiRepay.vue';
 import Staking from '@/views/Staking/Staking.vue';
-import DefiFMintClaimRewardsConfirmation from '@/views/DefiFMintClaimRewardsConfirmation/DefiFMintClaimRewardsConfirmation.vue';
-import DefiFMintPushRewardsConfirmation from '@/views/DefiFMintPushRewardsConfirmation/DefiFMintPushRewardsConfirmation.vue';
+import DefiZMintClaimRewardsConfirmation from '@/views/DefiZMintClaimRewardsConfirmation/DefiZMintClaimRewardsConfirmation.vue';
+import DefiZMintPushRewardsConfirmation from '@/views/DefiZMintPushRewardsConfirmation/DefiZMintPushRewardsConfirmation.vue';
 import AccountSendErc20 from '@/views/AccountSendErc20/AccountSendErc20.vue';
 import FUniswap from '@/views/funi/FUniswap/FUniswap.vue';
 import FUniswapSwapConfirmation from '@/views/funi/FUniswapSwapConfirmation/FUniswapSwapConfirmation.vue';
@@ -170,7 +170,7 @@ export const routes = [
                     {
                         name: 'defi-fmint',
                         path: '',
-                        component: DefiFMint,
+                        component: DefiZMint,
                     },
                     {
                         name: 'defi-lock',
@@ -271,13 +271,13 @@ export const routes = [
                     {
                         name: 'defi-fmint-claim-rewards-confirmation',
                         path: 'claim-rewards/confirmation',
-                        component: DefiFMintClaimRewardsConfirmation,
+                        component: DefiZMintClaimRewardsConfirmation,
                     },
 
                     {
                         name: 'defi-fmint-push-rewards-confirmation',
                         path: 'push-rewards/confirmation',
-                        component: DefiFMintPushRewardsConfirmation,
+                        component: DefiZMintPushRewardsConfirmation,
                     },
 
                     {

@@ -17,14 +17,14 @@
                         <div class="col break-word">
                             <div class="inline-img validator-img">
                                 <img v-if="value" :src="value" :alt="item.stakerInfo.name" class="not-fluid" />
-                                <img v-else src="img/fantom-logo.png" alt="fantom logo" class="not-fluid" />
+                                <img v-else src="http://localhost:8080/img/zilionixx-logo.png" alt="zilionixx logo" class="not-fluid" />
                             </div>
                         </div>
                     </div>
                     <template v-else>
                         <div class="inline-img validator-img">
                             <img v-if="value" :src="value" :alt="item.stakerInfo.name" class="not-fluid" />
-                            <img v-else src="img/fantom-logo.png" alt="fantom logo" class="not-fluid" />
+                            <img v-else src="http://localhost:8080/img/zilionixx-logo.png" alt="zilionixx logo" class="not-fluid" />
                         </div>
                     </template>
                 </template>

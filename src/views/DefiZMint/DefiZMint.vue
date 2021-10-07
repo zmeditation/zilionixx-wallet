@@ -286,7 +286,7 @@ import TransactionSuccessMessage from '@/components/TransactionSuccessMessage/Tr
 import { componentViewMixin } from '@/mixins/component-view.js';
 
 export default {
-    name: 'DefiFMint',
+    name: 'DefiZMint',
 
     components: {
         FViewTransition,
