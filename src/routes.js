@@ -19,8 +19,8 @@ import DefiDepositZNXConfirmation from './views/DefiDepositZNXConfirmation/DefiD
 import TransactionSuccessMessageView from './views/TransactionSuccessMessageView/TransactionSuccessMessageView.vue';
 import TransactionRejectMessageView from './views/TransactionRejectMessageView/TransactionRejectMessageView.vue';
 import DefiBorrowZUSDConfirmation from './views/DefiBorrowZUSDConfirmation/DefiBorrowZUSDConfirmation.vue';
-import DefiFTrade from './views/DefiFTrade/DefiFTrade.vue';
-import DefiFTradeConfirmation from './views/DefiFTradeConfirmation/DefiFTradeConfirmation.vue';
+import DefiZTrade from './views/DefiZTrade/DefiZTrade.vue';
+import DefiZTradeConfirmation from './views/DefiZTradeConfirmation/DefiZTradeConfirmation.vue';
 import DefiLockUnlock from '@/views/DefiLockUnlock/DefiLockUnlock.vue';
 import DefiLockUnlockConfirmation from '@/views/DefiLockUnlockConfirmation/DefiLockUnlockConfirmation.vue';
 import DefiMintRepay from '@/views/DefiMintRepay/DefiMintRepay.vue';
@@ -55,8 +55,8 @@ import GovProposalDetail from '@/components/GovProposalDetail/GovProposalDetail.
 import GovProposalConfirmation from '@/components/GovProposalConfirmation/GovProposalConfirmation.vue';
 import GovCancelVoteConfirmation from '@/components/GovCancelVoteConfirmation/GovCancelVoteConfirmation.vue';
 import ZUniswapPairDetail from '@/components/zuni/ZUniswapPairDetail/ZUniswapPairDetail.vue';
-import FMint from '@/views/FMint/FMint.vue';
-import FSwap from '@/views/FSwap/FSwap.vue';
+import ZMint from '@/views/ZMint/ZMint.vue';
+import ZSwap from '@/views/ZSwap/ZSwap.vue';
 
 export const routes = [
     {
@@ -165,7 +165,7 @@ export const routes = [
             {
                 name: 'zmint',
                 path: '/zmint/:address',
-                component: FMint,
+                component: ZMint,
                 children: [
                     {
                         name: 'defi-fmint',
@@ -341,23 +341,23 @@ export const routes = [
             {
                 name: 'zswap',
                 path: '/zswap/:address',
-                component: FSwap,
+                component: ZSwap,
                 children: [
                     {
                         name: 'defi-ftrade',
                         path: '',
-                        component: DefiFTrade,
+                        component: DefiZTrade,
                     },
 
                     {
                         name: 'defi-ftrade-confirmation',
                         path: 'confirmation',
-                        component: DefiFTradeConfirmation,
+                        component: DefiZTradeConfirmation,
                     },
                     {
                         name: 'defi-ftrade-confirmation2',
                         path: 'confirmation2',
-                        component: DefiFTradeConfirmation,
+                        component: DefiZTradeConfirmation,
                     },
                     {
                         name: 'defi-ftrade-transaction-success-message',

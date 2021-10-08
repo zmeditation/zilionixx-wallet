@@ -174,7 +174,7 @@ import FAutoResizeInput from '@/components/core/FAutoResizeInput/FAutoResizeInpu
 import FPlaceholder from '@/components/core/FPlaceholder/FPlaceholder.vue';
 
 export default {
-    name: 'DefiFTrade',
+    name: 'DefiZTrade',
 
     components: {
         FPlaceholder,

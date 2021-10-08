@@ -28,7 +28,7 @@ import {
 import { eventBusMixin } from '@/mixins/event-bus.js';
 
 export default {
-    name: 'FMint',
+    name: 'ZMint',
 
     components: { FViewTransition, AddressInfoBox, FMessage },
 

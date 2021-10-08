@@ -84,7 +84,7 @@ import FTokenValue from '@/components/core/FTokenValue/FTokenValue.vue';
  * Common component for DefiBorrowFUSDConfirmation a DefiManageBorrowConfirmation
  */
 export default {
-    name: 'DefiFTradeConfirmation',
+    name: 'DefiZTradeConfirmation',
 
     components: { FTokenValue, FMessage, FBackButton, LedgerConfirmationContent, TxConfirmation },
 
