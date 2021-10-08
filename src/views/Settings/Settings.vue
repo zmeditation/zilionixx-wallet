@@ -6,7 +6,7 @@
         <settings-form />
 
         <h2>zUNI</h2>
-        <f-uniswap-settings />
+        <z-uniswap-settings />
 
         <h2>Metamask</h2>
         <metamask-settings />
@@ -19,13 +19,13 @@
 <script>
 import SettingsForm from '@/components/forms/SettingsForm.vue';
 import MetamaskSettings from '@/components/metamask/MetamaskSettings/MetamaskSettings.vue';
-import FUniswapSettings from '@/components/funi/FUniswapSettings/FUniswapSettings.vue';
+import ZUniswapSettings from '@/components/zuni/ZUniswapSettings/ZUniswapSettings.vue';
 import SettingsLinks from '@/views/Settings/SettingsLinks.vue';
 
 export default {
     name: 'Settings',
 
-    components: { SettingsLinks, FUniswapSettings, MetamaskSettings, SettingsForm },
+    components: { SettingsLinks, ZUniswapSettings, MetamaskSettings, SettingsForm },
 };
 </script>
 

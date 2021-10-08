@@ -13,7 +13,7 @@
                 <div v-if="column" class="row no-collapse no-vert-col-padding">
                     <div class="col-6 f-row-label">{{ column.label }}</div>
                     <div class="col break-word">
-                        <f-uniswap-pair-symbol
+                        <z-uniswap-pair-symbol
                             :pair="item"
                             :router-link-to="{
                                 name: 'funiswap-pair-detail',
@@ -23,7 +23,7 @@
                     </div>
                 </div>
                 <template v-else>
-                    <f-uniswap-pair-symbol
+                    <z-uniswap-pair-symbol
                         :pair="item"
                         :router-link-to="{ name: 'funiswap-pair-detail', params: { pairAddress: item.pairAddress } }"
                     />
@@ -206,7 +206,7 @@
 <script>
 import FDataTable from '@/components/core/FDataTable/FDataTable.vue';
 import { formatNumberByLocale } from '@/filters.js';
-import FUniswapPairSymbol from '@/components/funi/FUniswapPairSymbol/FUniswapPairSymbol.vue';
+import ZUniswapPairSymbol from '@/components/zuni/ZUniswapPairSymbol/ZUniswapPairSymbol.vue';
 import { mapGetters } from 'vuex';
 import FTokenValue from '@/components/core/FTokenValue/FTokenValue.vue';
 import { defer } from '@/utils';
@@ -216,7 +216,7 @@ import FCryptoSymbol from '@/components/core/FCryptoSymbol/FCryptoSymbol.vue';
 export default {
     name: 'PairsList',
 
-    components: { FCryptoSymbol, FTokenValue, FUniswapPairSymbol, FDataTable },
+    components: { FCryptoSymbol, FTokenValue, ZUniswapPairSymbol, FDataTable },
 
     data() {
         return {

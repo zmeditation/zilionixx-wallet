@@ -13,12 +13,12 @@ import AccountHistory from './views/AccountHistory/AccountHistory.vue';
 import Settings from './views/Settings/Settings.vue';
 import Wallet from './views/Wallet/Wallet.vue';
 import DefiZMint from './views/DefiZMint/DefiZMint.vue';
-import DefiDepositFTM from './views/DefiDepositFTM/DefiDepositFTM.vue';
-import DefiBorrowFUSD from './views/DefiBorrowFUSD/DefiBorrowFUSD.vue';
-import DefiDepositFTMConfirmation from './views/DefiDepositFTMConfirmation/DefiDepositFTMConfirmation.vue';
+import DefiDepositZNX from './views/DefiDepositZNX/DefiDepositZNX.vue';
+import DefiBorrowZUSD from './views/DefiBorrowZUSD/DefiBorrowZUSD.vue';
+import DefiDepositZNXConfirmation from './views/DefiDepositZNXConfirmation/DefiDepositZNXConfirmation.vue';
 import TransactionSuccessMessageView from './views/TransactionSuccessMessageView/TransactionSuccessMessageView.vue';
 import TransactionRejectMessageView from './views/TransactionRejectMessageView/TransactionRejectMessageView.vue';
-import DefiBorrowFUSDConfirmation from './views/DefiBorrowFUSDConfirmation/DefiBorrowFUSDConfirmation.vue';
+import DefiBorrowZUSDConfirmation from './views/DefiBorrowZUSDConfirmation/DefiBorrowZUSDConfirmation.vue';
 import DefiFTrade from './views/DefiFTrade/DefiFTrade.vue';
 import DefiFTradeConfirmation from './views/DefiFTradeConfirmation/DefiFTradeConfirmation.vue';
 import DefiLockUnlock from '@/views/DefiLockUnlock/DefiLockUnlock.vue';
@@ -33,28 +33,28 @@ import Staking from '@/views/Staking/Staking.vue';
 import DefiZMintClaimRewardsConfirmation from '@/views/DefiZMintClaimRewardsConfirmation/DefiZMintClaimRewardsConfirmation.vue';
 import DefiZMintPushRewardsConfirmation from '@/views/DefiZMintPushRewardsConfirmation/DefiZMintPushRewardsConfirmation.vue';
 import AccountSendErc20 from '@/views/AccountSendErc20/AccountSendErc20.vue';
-import FUniswap from '@/views/funi/FUniswap/FUniswap.vue';
-import FUniswapSwapConfirmation from '@/views/funi/FUniswapSwapConfirmation/FUniswapSwapConfirmation.vue';
-import FUniswapAddLiquidityConfirmation from '@/views/funi/FUniswapAddLiquidityConfirmation/FUniswapAddLiquidityConfirmation.vue';
-import FUniswapRemoveLiquidityConfirmation from '@/views/funi/FUniswapRemoveLiquidityConfirmation/FUniswapRemoveLiquidityConfirmation.vue';
+import ZUniswap from '@/views/zuni/ZUniswap/ZUniswap.vue';
+import ZUniswapSwapConfirmation from '@/views/zuni/ZUniswapSwapConfirmation/ZUniswapSwapConfirmation.vue';
+import ZUniswapAddLiquidityConfirmation from '@/views/zuni/ZUniswapAddLiquidityConfirmation/ZUniswapAddLiquidityConfirmation.vue';
+import ZUniswapRemoveLiquidityConfirmation from '@/views/zuni/ZUniswapRemoveLiquidityConfirmation/ZUniswapRemoveLiquidityConfirmation.vue';
 import Eip from '@/views/Eip/Eip';
 import EipWelcome from '@/views/EipWelcome/EipWelcome';
 import EipSendTransaction from '@/views/EipSendTransaction/EipSendTransaction';
 import EipSelectAccounts from '@/views/EipSelectAccounts/EipSelectAccounts';
 import Swap from '@/views/Swap/Swap.vue';
-import FUniswapSwap from '@/components/funi/FUniswapSwap/FUniswapSwap.vue';
+import ZUniswapSwap from '@/components/zuni/ZUniswapSwap/ZUniswapSwap.vue';
 import Pools from '@/views/Pools/Pools.vue';
-import FUniswapPools from '@/components/funi/FUniswapPools/FUniswapPools.vue';
-import FUniswapAddLiquidity from '@/components/funi/FUniswapAddLiquidity/FUniswapAddLiquidity.vue';
+import ZUniswapPools from '@/components/zuni/ZUniswapPools/ZUniswapPools.vue';
+import ZUniswapAddLiquidity from '@/components/zuni/ZUniswapAddLiquidity/ZUniswapAddLiquidity.vue';
 import AddLiquidity from '@/views/AddLiquidity/AddLiquidity.vue';
-import FUniswapRemoveLiquidity from '@/components/funi/FUniswapRemoveLiquidity/FUniswapRemoveLiquidity.vue';
+import ZUniswapRemoveLiquidity from '@/components/zuni/ZUniswapRemoveLiquidity/ZUniswapRemoveLiquidity.vue';
 import RemoveLiquidity from '@/views/RemoveLiquidity/RemoveLiquidity.vue';
 import Gov from '@/views/Gov/Gov.vue';
 import GovHome from '@/views/GovHome/GovHome.vue';
 import GovProposalDetail from '@/components/GovProposalDetail/GovProposalDetail.vue';
 import GovProposalConfirmation from '@/components/GovProposalConfirmation/GovProposalConfirmation.vue';
 import GovCancelVoteConfirmation from '@/components/GovCancelVoteConfirmation/GovCancelVoteConfirmation.vue';
-import FUniswapPairDetail from '@/components/funi/FUniswapPairDetail/FUniswapPairDetail.vue';
+import ZUniswapPairDetail from '@/components/zuni/ZUniswapPairDetail/ZUniswapPairDetail.vue';
 import FMint from '@/views/FMint/FMint.vue';
 import FSwap from '@/views/FSwap/FSwap.vue';
 
@@ -283,12 +283,12 @@ export const routes = [
                     {
                         name: 'defi-manage-collateral',
                         path: 'manage-collateral',
-                        component: DefiDepositFTM,
+                        component: DefiDepositZNX,
                     },
                     {
                         name: 'defi-manage-collateral-confirmation',
                         path: 'manage-collateral/confirmation',
-                        component: DefiDepositFTMConfirmation,
+                        component: DefiDepositZNXConfirmation,
                     },
                     {
                         name: 'defi-manage-collateral-transaction-success-message',
@@ -304,17 +304,17 @@ export const routes = [
                     {
                         name: 'defi-borrow-fusd',
                         path: 'manage-fusd',
-                        component: DefiBorrowFUSD,
+                        component: DefiBorrowZUSD,
                     },
                     {
                         name: 'defi-borrow-fusd-confirmation',
                         path: 'manage-fusd/confirmation',
-                        component: DefiBorrowFUSDConfirmation,
+                        component: DefiBorrowZUSDConfirmation,
                     },
                     {
                         name: 'defi-borrow-fusd-confirmation2',
                         path: 'manage-fusd/confirmation2',
-                        component: DefiBorrowFUSDConfirmation,
+                        component: DefiBorrowZUSDConfirmation,
                     },
                     {
                         name: 'defi-borrow-fusd-transaction-success-message',
@@ -473,7 +473,7 @@ export const routes = [
             {
                 name: 'zuniswap',
                 path: '/zuni/:address',
-                component: FUniswap,
+                component: ZUniswap,
                 children: [
                     {
                         name: 'swap',
@@ -483,17 +483,17 @@ export const routes = [
                             {
                                 name: 'funiswap-swap',
                                 path: '',
-                                component: FUniswapSwap,
+                                component: ZUniswapSwap,
                             },
                             {
                                 name: 'funiswap-swap-confirmation',
                                 path: 'confirmation',
-                                component: FUniswapSwapConfirmation,
+                                component: ZUniswapSwapConfirmation,
                             },
                             {
                                 name: 'funiswap-swap-confirmation2',
                                 path: 'confirmation2',
-                                component: FUniswapSwapConfirmation,
+                                component: ZUniswapSwapConfirmation,
                             },
                             {
                                 name: 'funiswap-swap-transaction-success-message',
@@ -525,7 +525,7 @@ export const routes = [
                             {
                                 name: 'funiswap-pools',
                                 path: '',
-                                component: FUniswapPools,
+                                component: ZUniswapPools,
                             },
                             {
                                 name: 'add-liquidity',
@@ -535,22 +535,22 @@ export const routes = [
                                     {
                                         name: 'funiswap-add-liquidity',
                                         path: '',
-                                        component: FUniswapAddLiquidity,
+                                        component: ZUniswapAddLiquidity,
                                     },
                                     {
                                         name: 'funiswap-add-liquidity-confirmation',
                                         path: 'confirmation',
-                                        component: FUniswapAddLiquidityConfirmation,
+                                        component: ZUniswapAddLiquidityConfirmation,
                                     },
                                     {
                                         name: 'funiswap-add-liquidity-confirmation2',
                                         path: 'confirmation2',
-                                        component: FUniswapAddLiquidityConfirmation,
+                                        component: ZUniswapAddLiquidityConfirmation,
                                     },
                                     {
                                         name: 'funiswap-add-liquidity-confirmation3',
                                         path: 'confirmation3',
-                                        component: FUniswapAddLiquidityConfirmation,
+                                        component: ZUniswapAddLiquidityConfirmation,
                                     },
                                     {
                                         name: 'funiswap-add-liquidity-transaction-success-message',
@@ -592,17 +592,17 @@ export const routes = [
                                     {
                                         name: 'funiswap-remove-liquidity',
                                         path: '',
-                                        component: FUniswapRemoveLiquidity,
+                                        component: ZUniswapRemoveLiquidity,
                                     },
                                     {
                                         name: 'funiswap-remove-liquidity-confirmation',
                                         path: 'confirmation',
-                                        component: FUniswapRemoveLiquidityConfirmation,
+                                        component: ZUniswapRemoveLiquidityConfirmation,
                                     },
                                     {
                                         name: 'funiswap-remove-liquidity-confirmation2',
                                         path: 'confirmation2',
-                                        component: FUniswapRemoveLiquidityConfirmation,
+                                        component: ZUniswapRemoveLiquidityConfirmation,
                                     },
                                     {
                                         name: 'funiswap-remove-liquidity-transaction-success-message',
@@ -629,7 +629,7 @@ export const routes = [
                             {
                                 name: 'funiswap-pair-detail',
                                 path: 'pair/:pairAddress',
-                                component: FUniswapPairDetail,
+                                component: ZUniswapPairDetail,
                             },
                         ],
                     },

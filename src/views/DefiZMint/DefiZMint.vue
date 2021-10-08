@@ -280,8 +280,8 @@ import SynthsPositionsList from '@/components/data-tables/SynthsPositionsList/Sy
 import AssetsList from '@/components/data-tables/AssetsList/AssetsList.vue';
 import TxConfirmationWindow from '@/components/windows/TxConfirmationWindow/TxConfirmationWindow.vue';
 import FViewTransition from '@/components/core/FViewTransition/FViewTransition.vue';
-import DefiFMintPushRewardsConfirmation from '@/views/DefiFMintPushRewardsConfirmation/DefiFMintPushRewardsConfirmation.vue';
-import DefiFMintClaimRewardsConfirmation from '@/views/DefiFMintClaimRewardsConfirmation/DefiFMintClaimRewardsConfirmation.vue';
+import DefiZMintPushRewardsConfirmation from '@/views/DefiZMintPushRewardsConfirmation/DefiZMintPushRewardsConfirmation.vue';
+import DefiZMintClaimRewardsConfirmation from '@/views/DefiZMintClaimRewardsConfirmation/DefiZMintClaimRewardsConfirmation.vue';
 import TransactionSuccessMessage from '@/components/TransactionSuccessMessage/TransactionSuccessMessage.vue';
 import { componentViewMixin } from '@/mixins/component-view.js';
 
@@ -302,8 +302,8 @@ export default {
         FPlaceholder,
         FTokenValue,
         FMessage,
-        DefiFMintPushRewardsConfirmation,
-        DefiFMintClaimRewardsConfirmation,
+        DefiZMintPushRewardsConfirmation,
+        DefiZMintClaimRewardsConfirmation,
         TransactionSuccessMessage,
     },
 
