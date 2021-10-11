@@ -1,6 +1,6 @@
 import TransportNodeHid from "@ledgerhq/hw-transport-node-hid";
 import FantomNano from "../../lib/fantom-nano";
-import {buffer2Hex} from "../../lib/utils";
+import { buffer2Hex } from "../../lib/utils";
 
 /**
  * showVersion loads application version from Ledger device and dumps
@@ -11,11 +11,11 @@ import {buffer2Hex} from "../../lib/utils";
  */
 async function showVersion(bridge) {
     // inform
-    console.log("\nRequesting Fantom Nano Ledger app version.");
+    console.log("\nRequesting Zilionixx Nano Ledger app version.");
 
     // get the version info
     const ver = await bridge.getVersion();
-    console.log(`    > Fantom Nano app version is: ${ver.major}.${ver.minor}.${ver.patch}`);
+    console.log(`    > Zilionixx Nano app version is: ${ver.major}.${ver.minor}.${ver.patch}`);
 
     // devel version?
     if (ver.flags.isDevelopment) {
@@ -108,7 +108,7 @@ async function getSignedTransaction(bridge) {
 async function run() {
     // inform
     console.log("-----------------------------------------------");
-    console.log("Fantom Nano Ledger application example started.");
+    console.log("Zilionixx Nano Ledger application example started.");
     console.log("-----------------------------------------------");
     console.log("\n    > We try to connect to your Ledger device.");
 

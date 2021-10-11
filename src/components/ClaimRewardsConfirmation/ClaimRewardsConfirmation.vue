@@ -61,7 +61,7 @@
 <script>
 import { toFTM, WEIToFTM } from '@/utils/transactions.js';
 import { mapGetters } from 'vuex';
-import sfcUtils from 'fantom-ledgerjs/src/sfc-utils.js';
+import sfcUtils from 'zilionixx-ledgerjs/src/sfc-utils.js';
 import TxConfirmation from '../TxConfirmation/TxConfirmation.vue';
 import { SFC_CLAIM_MAX_EPOCHS } from '@/plugins/fantom-web3-wallet.js';
 import LedgerConfirmationContent from '../LedgerConfirmationContent/LedgerConfirmationContent.vue';

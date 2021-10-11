@@ -75,8 +75,8 @@ import { toFTM } from '../../utils/transactions.js';
 import FBackButton from '../../components/core/FBackButton/FBackButton.vue';
 import { getAppParentNode } from '../../app-structure.js';
 import FMessage from '../../components/core/FMessage/FMessage.vue';
-import wftmUtils from 'fantom-ledgerjs/src/wftm-utils.js';
-import erc20Utils from 'fantom-ledgerjs/src/erc20-utils.js';
+import wftmUtils from 'zilionixx-ledgerjs/src/wftm-utils.js';
+import erc20Utils from 'zilionixx-ledgerjs/src/erc20-utils.js';
 import appConfig from '../../../app.config.js';
 import FTokenValue from '@/components/core/FTokenValue/FTokenValue.vue';
 

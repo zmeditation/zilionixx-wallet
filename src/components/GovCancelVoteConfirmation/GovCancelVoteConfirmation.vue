@@ -43,7 +43,7 @@ import FMessage from '@/components/core/FMessage/FMessage.vue';
 import { mapGetters } from 'vuex';
 import { viewHelpersMixin } from '@/mixins/view-helpers.js';
 import { toKebabCase } from '@/utils';
-import governanceUtils from 'fantom-ledgerjs/src/governance-utils.js';
+import governanceUtils from 'zilionixx-ledgerjs/src/governance-utils.js';
 import Web3 from 'web3';
 
 export default {

@@ -97,7 +97,7 @@ import FInput from '../core/FInput/FInput.vue';
 import ValidatorPickerWindow from '../windows/ValidatorPickerWindow.vue';
 import { mapGetters } from 'vuex';
 import { isAriaAction } from '../../utils/aria.js';
-import sfcUtils from 'fantom-ledgerjs/src/sfc-utils.js';
+import sfcUtils from 'zilionixx-ledgerjs/src/sfc-utils.js';
 import { GAS_LIMITS } from '../../plugins/fantom-web3-wallet.js';
 
 // import { formatHexToInt } from '../../filters.js';

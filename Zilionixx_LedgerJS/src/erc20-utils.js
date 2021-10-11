@@ -4,10 +4,10 @@ import Web3 from "web3";
 // ZERO_AMOUNT represents zero amount transferred on some calls.
 const ZERO_AMOUNT = '0x0';
 
-// OPERA_CHAIN_ID is the chain id used by Fantom Opera blockchain.
+// OPERA_CHAIN_ID is the chain id used by Zilionixx Opera blockchain.
 const OPERA_CHAIN_ID = '0xfa';
 
-// TESTNET_CHAIN_ID is the chain id used by Fantom Opera test net.
+// TESTNET_CHAIN_ID is the chain id used by Zilionixx Opera test net.
 const TESTNET_CHAIN_ID = '0xfa2';
 
 /**

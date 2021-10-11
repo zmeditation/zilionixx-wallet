@@ -1,6 +1,6 @@
 {
-  "name": "fantom-ledgerjs",
-  "description": "Fantom Ledger Hardware Wallet High Level API",
+  "name": "zilionixx-ledgerjs",
+  "description": "Zilionixx Ledger Hardware Wallet High Level API",
   "version": "1.0.4",
   "files": [
     "lib"

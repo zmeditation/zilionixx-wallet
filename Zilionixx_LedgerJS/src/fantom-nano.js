@@ -1,24 +1,24 @@
 /**
- * This Implements Fantom Nano Ledger HW Wallet API
+ * This Implements Zilionixx Nano Ledger HW Wallet API
  *
  * @author Jiri Malek <jirka.malek@gmail.com>
- * @copyright (c) 2020, Fantom Foundation
+ * @copyright (c) 2020, Zilionixx Foundation
  * @version 0.1.7
  * @licese MIT
  */
-import {Assert, stripReturnCodeFromResponse, bip32PathToBuffer, BIP32_HARDENED, buffer2Hex} from "./utils";
-import {Transaction} from "ethereumjs-tx";
+import { Assert, stripReturnCodeFromResponse, bip32PathToBuffer, BIP32_HARDENED, buffer2Hex } from "./utils";
+import { Transaction } from "ethereumjs-tx";
 import Common from "ethereumjs-common";
-import {encode} from "rlp";
-import {toBuffer, stripZeros} from "ethereumjs-util";
+import { encode } from "rlp";
+import { toBuffer, stripZeros } from "ethereumjs-util";
 
-// FANTOM_CHAIN_ID represents the Fantom Opera main chain id.
-export const FANTOM_CHAIN_ID = 0xfa;
+// Zilionixx_CHAIN_ID represents the Zilionixx Opera main chain id.
+export const ZILIONIXX_CHAIN_ID = 0xfa;
 
-// CLA specified service class used by Fantom Ledger application
+// CLA specified service class used by Zilionixx Ledger application
 const CLA = 0xe0;
 
-// INS specifies instructions supported by the Fantom Ledger app
+// INS specifies instructions supported by the Zilionixx Ledger app
 const INS = {
     GET_VERSION: 0x01,
     GET_PUBLIC_KEY: 0x10,
@@ -37,7 +37,7 @@ const SIGN_STATE = {
 // to the device in one chunk
 const MAX_APDU_CHUNK_LENGTH = 150;
 
-// ErrorCodes exports list of errors produced by the Fantom Ledger app
+// ErrorCodes exports list of errors produced by the Zilionixx Ledger app
 // in case of unexpected event.
 export const ErrorCodes = {
     // Bad request header.
@@ -136,7 +136,7 @@ const wrapConvertError = fn => async (...args) => {
 };
 
 
-// FantomNano implements high level Fantom Nano Ledger HW wallet communication
+// ZilionixxNano implements high level Zilionixx Nano Ledger HW wallet communication
 export default class FantomNano {
     // transport represents Ledger hw-transport layer
     // used to exchange APDU stream with the Ledger device
@@ -174,7 +174,7 @@ export default class FantomNano {
         // if another function is being resolved so we don't get into a race conditions.
         // Some functions require user interaction with the device and another instruction
         // can not be executed until the active one finished. If we send another APDU
-        // in the mean time, the Fantom app will restart the Ledger device to protect
+        // in the mean time, the Zilionixx app will restart the Ledger device to protect
         // it against malicious attempts to abuse possible weaknesses of the internal
         // state switch.
         this.transport.decorateAppAPIMethods(this, this.methods, ledgerAppKey);
@@ -185,7 +185,7 @@ export default class FantomNano {
     }
 
     /**
-     * getVersion obtains Fantom Nano Ledger application version
+     * getVersion obtains Zilionixx Nano Ledger application version
      *
      * @returns {Promise<Version>}
      */
@@ -210,7 +210,7 @@ export default class FantomNano {
             };
 
             // return the data structure
-            return {major, minor, patch, flags};
+            return { major, minor, patch, flags };
         });
     }
 
@@ -234,7 +234,7 @@ export default class FantomNano {
     }
 
     /**
-     * getAddress extracts Fantom wallet address for the given account and address id.
+     * getAddress extracts Zilionixx wallet address for the given account and address id.
      *
      * @param {number} accountId Zero based account identifier.
      * @param {number} addressId Zero based address identifier.
@@ -247,7 +247,7 @@ export default class FantomNano {
     }
 
     /**
-     * listAddresses extracts sequence of logically consequent Fantom wallet addresses
+     * listAddresses extracts sequence of logically consequent Zilionixx wallet addresses
      * for the given account, initial address id and expected address length.
      *
      * Please note that user will be warned if you ask for an address range exceeding
@@ -292,7 +292,7 @@ export default class FantomNano {
     }
 
     /**
-     * getPublicKey derives Fantom wallet public key for the given account and address id.
+     * getPublicKey derives Zilionixx wallet public key for the given account and address id.
      *
      * @param {number} accountId Zero based account identifier.
      * @param {number} addressId Zero based address identifier.
@@ -320,7 +320,7 @@ export default class FantomNano {
                     {
                         name: 'custom-network',
                         networkId: 1,
-                        chainId: FANTOM_CHAIN_ID
+                        chainId: ZILIONIXX_CHAIN_ID
                     },
                     'petersburg'
                 )
@@ -454,7 +454,7 @@ export default class FantomNano {
         const chunks = [];
         const parts = Math.ceil(txBuffer.length / MAX_APDU_CHUNK_LENGTH);
         for (let i = 0; i < parts; i++) {
-            chunks [i] = txBuffer.slice(i * MAX_APDU_CHUNK_LENGTH, (i + 1) * MAX_APDU_CHUNK_LENGTH);
+            chunks[i] = txBuffer.slice(i * MAX_APDU_CHUNK_LENGTH, (i + 1) * MAX_APDU_CHUNK_LENGTH);
         }
 
         // initialize the signing process first (here we send BIP32 path for signing key derivation)
@@ -496,7 +496,7 @@ export default class FantomNano {
         const txFinal = new Transaction(
             {
                 ...tx,
-                v: sig.v + ((FANTOM_CHAIN_ID * 2) + 8),
+                v: sig.v + ((ZILIONIXX_CHAIN_ID * 2) + 8),
                 r: sig.r,
                 s: sig.s
             },
@@ -505,7 +505,7 @@ export default class FantomNano {
 
         // return the signed tx structure with all the important details
         return {
-            v: sig.v + ((FANTOM_CHAIN_ID * 2) + 8),
+            v: sig.v + ((ZILIONIXX_CHAIN_ID * 2) + 8),
             r: sig.r,
             s: sig.s,
             tx: txFinal,
@@ -516,9 +516,9 @@ export default class FantomNano {
     /**
      * deriveAddress derives address for the given BIP32 path.
      *
-     * Please note that the Fantom Ledger application is coded to provide
+     * Please note that the Zilionixx Ledger application is coded to provide
      * only subset of BIP32 paths with prefix "44'/60'". We don't derive
-     * addresses outside of expected Fantom address space.
+     * addresses outside of expected Zilionixx address space.
      *
      * @param {[]} bip32Path
      * @param {boolean} confirmAddress
@@ -557,9 +557,9 @@ export default class FantomNano {
     /**
      * derivePublicKey derives public key for the given BIP32 path.
      *
-     * Please note that the Fantom Ledger application is coded to provide
+     * Please note that the Zilionixx Ledger application is coded to provide
      * only subset of BIP32 paths with prefix "44'/60'". We don't derive
-     * public keys outside of expected Fantom address space.
+     * public keys outside of expected Zilionixx address space.
      *
      * @param bip32Path
      * @returns {Promise<{}>}

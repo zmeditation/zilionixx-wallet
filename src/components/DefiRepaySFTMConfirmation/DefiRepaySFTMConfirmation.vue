@@ -54,8 +54,8 @@ import FMessage from '@/components/core/FMessage/FMessage.vue';
 import { mapGetters } from 'vuex';
 // import { viewHelpersMixin } from '@/mixins/view-helpers.js';
 import { getUniqueId, toKebabCase } from '@/utils';
-import sfcUtils from 'fantom-ledgerjs/src/sfc-utils.js';
-import erc20Utils from 'fantom-ledgerjs/src/erc20-utils.js';
+import sfcUtils from 'zilionixx-ledgerjs/src/sfc-utils.js';
+import erc20Utils from 'zilionixx-ledgerjs/src/erc20-utils.js';
 import Web3 from 'web3';
 
 export default {

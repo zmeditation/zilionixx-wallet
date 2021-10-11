@@ -44,7 +44,7 @@
 
 <script>
 import { mapGetters } from 'vuex';
-import sfcUtils from 'fantom-ledgerjs/src/sfc-utils.js';
+import sfcUtils from 'zilionixx-ledgerjs/src/sfc-utils.js';
 import TxConfirmation from '@/components/TxConfirmation/TxConfirmation.vue';
 import LedgerConfirmationContent from '@/components/LedgerConfirmationContent/LedgerConfirmationContent.vue';
 import { toFTM } from '@/utils/transactions.js';

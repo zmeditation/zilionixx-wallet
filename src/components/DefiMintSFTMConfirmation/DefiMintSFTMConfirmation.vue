@@ -49,7 +49,7 @@ import FMessage from '@/components/core/FMessage/FMessage.vue';
 import { mapGetters } from 'vuex';
 // import { viewHelpersMixin } from '@/mixins/view-helpers.js';
 import { toKebabCase } from '@/utils';
-import sfcUtils from 'fantom-ledgerjs/src/sfc-utils.js';
+import sfcUtils from 'zilionixx-ledgerjs/src/sfc-utils.js';
 import Web3 from 'web3';
 import FTokenValue from '@/components/core/FTokenValue/FTokenValue.vue';
 import { filtersOptions } from '@/filters.js';

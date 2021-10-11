@@ -43,7 +43,7 @@ import FBackButton from '@/components/core/FBackButton/FBackButton.vue';
 import LedgerConfirmationContent from '@/components/LedgerConfirmationContent/LedgerConfirmationContent.vue';
 import { getAppParentNode } from '@/app-structure.js';
 import FMessage from '@/components/core/FMessage/FMessage.vue';
-import fMintUtils from 'fantom-ledgerjs/src/fmint-utils.js';
+import fMintUtils from 'zilionixx-ledgerjs/src/fmint-utils.js';
 import { mapGetters } from 'vuex';
 
 export default {

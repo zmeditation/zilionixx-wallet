@@ -143,7 +143,7 @@ import { Web3 } from '../../plugins/fantom-web3-wallet.js';
 import { toFTM } from '../../utils/transactions.js';
 import { formatNumberByLocale } from '../../filters.js';
 import TxConfirmation from '../TxConfirmation/TxConfirmation.vue';
-import erc20Utils from 'fantom-ledgerjs/src/erc20-utils.js';
+import erc20Utils from 'zilionixx-ledgerjs/src/erc20-utils.js';
 import FTokenValue from '@/components/core/FTokenValue/FTokenValue.vue';
 import FMessage from '@/components/core/FMessage/FMessage.vue';
 import appConfig from '../../../app.config.js';

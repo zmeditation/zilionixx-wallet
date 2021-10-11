@@ -1,6 +1,6 @@
-// Basic functions for communication with fantom nano ledger hw, using fantom-ledgerjs
+// Basic functions for communication with zilionixx nano ledger hw, using zilionixx-ledgerjs
 
-import FantomNano from 'fantom-ledgerjs/src/fantom-nano.js';
+import FantomNano from 'zilionixx-ledgerjs/src/fantom-nano.js';
 import TransportU2F from '@ledgerhq/hw-transport-u2f';
 // import TransportWebUSB from '@ledgerhq/hw-transport-webusb';
 import TransportWebHID from '@ledgerhq/hw-transport-webhid';

@@ -11,7 +11,7 @@ module.exports = {
     publicPath: '',
     outputDir: appConfig.build.outputDir,
 
-    transpileDependencies: ['fantom-ledgerjs'],
+    transpileDependencies: ['zilionixx-ledgerjs'],
 
     devServer: {
         https: false,
