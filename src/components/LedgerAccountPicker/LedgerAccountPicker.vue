@@ -1,7 +1,7 @@
 <template>
     <div class="ledger-account-picker">
         <div v-if="showLedgerConnectMessage" class="ledger-connect-message">
-            Please connect your ledger device and select Fantom FTM app.
+            Please connect your ledger device and select Zilionixx ZNX app.
             <div v-if="showTryAgainButton" class="button-footer">
                 <button class="btn large" @click="onTryAgainBtnClick">Try again</button>
             </div>
@@ -15,7 +15,7 @@
                                 {{ account.address }}
                             </a>
                         </h3>
-                        <div class="col">{{ toFTM(account.balance) }} FTM</div>
+                        <div class="col">{{ toFTM(account.balance) }} ZNX</div>
                     </div>
                 </li>
             </ul>

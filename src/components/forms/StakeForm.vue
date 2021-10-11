@@ -37,7 +37,7 @@
                                 <div class="input-label-layout">
                                     <label :for="sProps.inputId">{{ sProps.label }}</label>
                                     <button type="button" class="btn light small" @click="onEntireBalanceClick">
-                                        Entire Balance -2 FTM
+                                        Entire Balance -2 ZNX
                                     </button>
                                 </div>
                             </template>

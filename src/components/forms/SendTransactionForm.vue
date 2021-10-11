@@ -9,7 +9,7 @@
                     <legend v-else class="h2">
                         <div class="cont-with-back-btn">
                             <span>
-                                Send Opera FTM <span class="f-steps"><b>2</b> / 3</span>
+                                Send Opera ZNX <span class="f-steps"><b>2</b> / 3</span>
                             </span>
                             <button type="button" class="btn light" @click="onPreviousBtnClick">Back</button>
                         </div>
@@ -81,7 +81,7 @@
                         <div class="align-center form-buttons">
                             <template v-if="sendDirection !== 'OperaToOpera'">
                                 <f-message type="warning" class="align-center">
-                                    All bridge transactions incur a fee of {{ minFTMToTransfer }} FTM, deducted from the
+                                    All bridge transactions incur a fee of {{ minFTMToTransfer }} ZNX, deducted from the
                                     transfer amount.
                                 </f-message>
                                 <f-message
@@ -89,7 +89,7 @@
                                     type="info"
                                     class="big"
                                 >
-                                    You will receive <b>{{ amount - minFTMToTransfer }} FTM</b>
+                                    You will receive <b>{{ amount - minFTMToTransfer }} ZNX</b>
                                 </f-message>
                                 <br />
                             </template>
@@ -148,7 +148,7 @@ export default {
             amountErrMsg: 'Invalid amount',
             gasPrice: '',
             amount: '',
-            sendToErrorMsg: 'Enter a valid Opera FTM address or domain name',
+            sendToErrorMsg: 'Enter a valid Opera ZNX address or domain name',
             /** Balance of BNB or ETH account. */
             ETHOrBNBAccountBalance: '',
             minFTMToTransfer: appConfig.bnbridgeApi.minFTMToTransfer,
@@ -209,7 +209,7 @@ export default {
         tokenSymbol() {
             const { token } = this;
 
-            return token.address ? this.$defi.getTokenSymbol(token) : 'FTM';
+            return token.address ? this.$defi.getTokenSymbol(token) : 'ZNX';
         },
 
         /**
@@ -293,7 +293,7 @@ export default {
                     } else {
                         try {
                             const data = await this.$bnb.getBNBBalances(value);
-                            this.ETHOrBNBAccountBalance = `Current Fantom Balance: ${data.balance} FTM`;
+                            this.ETHOrBNBAccountBalance = `Current Zilionixx Balance: ${data.balance} FTM`;
                         } catch (_error) {
                             validAddress = false;
 
@@ -312,7 +312,7 @@ export default {
                 if (validAddress) {
                     try {
                         const balance = await this.$bnb.getETHBalance(value);
-                        this.ETHOrBNBAccountBalance = `Current Fantom Balance: ${balance} FTM`;
+                        this.ETHOrBNBAccountBalance = `Current Zilionixx Balance: ${balance} FTM`;
                     } catch (_error) {
                         validAddress = false;
 

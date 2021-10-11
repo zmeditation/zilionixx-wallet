@@ -13,7 +13,7 @@
                     Send {{ tokenSymbol }} - Confirmation <span class="f-steps"><b>2</b> / 2</span>
                 </span>
                 <span v-else>
-                    Send Opera FTM - Confirmation <span class="f-steps"><b>3</b> / 3</span>
+                    Send Opera ZNX - Confirmation <span class="f-steps"><b>3</b> / 3</span>
                 </span>
                 <button type="button" class="btn light" @click="onBackBtnClick">Back</button>
             </h2>
@@ -32,7 +32,7 @@
                             <template v-if="token.address">
                                 <f-token-value :value="sendToAddressBalance" :token="token" />
                             </template>
-                            <template v-else-if="sendToAddressBalance"> {{ sendToAddressBalance }} FTM </template>
+                            <template v-else-if="sendToAddressBalance"> {{ sendToAddressBalance }} ZNX </template>
                             <template v-if="sendToAccountName">, {{ sendToAccountName }} </template> )
                         </span>
                     </div>
@@ -66,11 +66,11 @@
 
                 <template v-if="sendDirection !== 'OperaToOpera'">
                     <f-message type="warning" class="align-center">
-                        All bridge transactions incur a fee of {{ minFTMToTransfer }} FTM, deducted from the transfer
+                        All bridge transactions incur a fee of {{ minFTMToTransfer }} ZNX, deducted from the transfer
                         amount.
                     </f-message>
                     <f-message type="info" class="big">
-                        You will receive <b>{{ txData.amount - minFTMToTransfer }} FTM</b>
+                        You will receive <b>{{ txData.amount - minFTMToTransfer }} ZNX</b>
                     </f-message>
                     <br />
                 </template>
@@ -92,7 +92,7 @@
                                 {{ txData.opera_address }}
                                 <span v-show="sendToAddressBalance" class="f-row-label">
                                     <template v-if="sendToAddressBalance">
-                                        ( {{ toFTM(sendToAddressBalance.balance) }} FTM )
+                                        ( {{ toFTM(sendToAddressBalance.balance) }} ZNX )
                                     </template>
                                 </span>
                             </div>
@@ -105,7 +105,7 @@
                                 {{ currentAccount.address }}
                                 <span class="f-row-label">
                                     <template v-if="currentAccount.name"><br /></template>
-                                    ( {{ toFTM(currentAccount.balance) }} FTM
+                                    ( {{ toFTM(currentAccount.balance) }} ZNX
                                     <template v-if="currentAccount.name">, {{ currentAccount.name }}</template> )
                                 </span>
                             </div>
@@ -125,10 +125,10 @@
                     </li>
                 </ol>
                 <f-message v-if="sendDirection === 'OperaToEthereum'" type="warning" class="align-center">
-                    All bridge transactions incur a fee of {{ minFTMToTransfer }} FTM, deducted from the transfer
+                    All bridge transactions incur a fee of {{ minFTMToTransfer }} ZNX, deducted from the transfer
                     amount.
                     <br />
-                    You will receive {{ txData.amount - minFTMToTransfer }} FTM
+                    You will receive {{ txData.amount - minFTMToTransfer }} ZNX
                     <br />
                 </f-message>
             </template>
@@ -187,7 +187,7 @@ export default {
         tokenSymbol() {
             const { token } = this;
 
-            return token.address ? this.$defi.getTokenSymbol(token) : 'FTM';
+            return token.address ? this.$defi.getTokenSymbol(token) : 'ZNX';
         },
 
         /**

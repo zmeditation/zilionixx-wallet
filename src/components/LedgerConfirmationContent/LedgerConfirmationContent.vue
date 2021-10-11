@@ -15,7 +15,7 @@
                     {{ currentAccount.address }}
                     <span class="f-row-label">
                         <template v-if="currentAccount.name"><br /></template>
-                        ( {{ toFTM(currentAccount.balance) }} FTM
+                        ( {{ toFTM(currentAccount.balance) }} ZNX
                         <template v-if="currentAccount.name">, {{ currentAccount.name }}</template> )
                     </span>
                 </div>
@@ -23,7 +23,7 @@
         </li>
         <li>
             <div class="row no-collapse">
-                <div class="col-3 f-row-label">Amount (FTM)</div>
+                <div class="col-3 f-row-label">Amount (ZNX)</div>
                 <div class="col">
                     {{ amount }}
                 </div>

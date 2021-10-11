@@ -12,14 +12,14 @@
             <div class="header">
                 <div class="header-logo">
                     <router-link to="/">
-                        <img src="zilionixx-logo.png" alt="" class="not-fluid" />
+                        <img :src="require('../../../public/zilionixx-logo.png')" alt="" class="not-fluid" />
                     </router-link>
                 </div>
             </div>
             <div class="body">
                 <div class="logo">
                     <router-link to="/" class="logo-link">
-                        <img src="favicon.png" width="50" height="50" />
+                        <img :src="imgUrl" width="50" height="50" />
                         <span class="wallet-label">zWallet</span>
                     </router-link>
                 </div>
@@ -28,7 +28,7 @@
             <div class="footer">
                 <social-media-links />
                 <div class="copyright">
-                    <a href="https://fantom.foundation/" target="_blank" rel="nofollow">©2020 Fantom Foundation</a>
+                    <a href="https://fantom.foundation/" target="_blank" rel="nofollow">©2020 Zilionixx Foundation</a>
                 </div>
             </div>
         </div>
@@ -54,7 +54,6 @@ import funiIcon from '../../assets/svg/monochrome/Sidebar/fUNI.svg';
 import swapIcon from '../../assets/svg/defi/ftrade.svg';
 import voteIcon from '../../assets/svg/monochrome/Sidebar/Governance.svg';
 import fmintIcon from '../../assets/svg/defi/mint.svg';
-
 /*
 import homeIcon from '../../assets/svg/home.svg';
 import settingsIcon from '../../assets/svg/settings.svg';
@@ -87,6 +86,7 @@ export default {
 
     data() {
         return {
+            imgUrl: window.location.origin + '/zilionixx.png',
             /** Is drawer visible? */
             drawerOn: false,
             /** Animate drawer. */

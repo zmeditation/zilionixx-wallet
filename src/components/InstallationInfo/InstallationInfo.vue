@@ -38,11 +38,11 @@
             <div class="inst-content">
                 <ul class="no-markers">
                     <li>
-                        <b>Step 1:</b> Open the <a href="https://pwawallet.fantom.network/">Fantom Wallet</a> in
+                        <b>Step 1:</b> Open the <a href="https://pwawallet.fantom.network/">Zilionixx Wallet</a> in
                         <b>Chrome</b>
                     </li>
                     <li><b>Step 2:</b> Go to <b>Settings</b> (Three dots in the top right corner)</li>
-                    <li><b>Step 3:</b> Click <b>“Install Fantom PWA Wallet”</b></li>
+                    <li><b>Step 3:</b> Click <b>“Install Zilionixx PWA Wallet”</b></li>
                 </ul>
             </div>
         </f-window>
@@ -58,7 +58,7 @@
             <div class="inst-content">
                 <ul class="no-markers">
                     <li>
-                        <b>Step 1:</b> Open the <a href="https://pwawallet.fantom.network/">Fantom Wallet</a> in
+                        <b>Step 1:</b> Open the <a href="https://pwawallet.fantom.network/">Zilionixx Wallet</a> in
                         <b>Safari</b>
                     </li>
                     <li><b>Step 2:</b> Click the <b>Share button</b> in Safari (at the bottom)</li>
@@ -78,7 +78,7 @@
             <div class="inst-content">
                 <ul class="no-markers">
                     <li>
-                        <b>Step 1:</b> Open the <a href="https://pwawallet.fantom.network/">Fantom Wallet</a> in
+                        <b>Step 1:</b> Open the <a href="https://pwawallet.fantom.network/">Zilionixx Wallet</a> in
                         <b>Chrome</b>
                     </li>
                     <li><b>Step 2:</b> Click <b>Settings</b> (top right corner)</li>

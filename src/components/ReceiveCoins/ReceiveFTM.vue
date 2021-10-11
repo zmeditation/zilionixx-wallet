@@ -1,7 +1,7 @@
 <template>
     <div class="receive-ftm">
         <div class="align-center">
-            Send your Opera FTM to:
+            Send your Opera ZNX to:
 
             <h3 class="address break-word h2" :class="addressCssClass">
                 {{ currentAccount.address }} &nbsp;
@@ -20,7 +20,7 @@
                 >
                     <template #popover-text>
                         Address copied to clipboard. <br />
-                        Warning: Use this address to receive Opera FTM only. If you are receiving FTM-ERC20 you need to
+                        Warning: Use this address to receive Opera ZNX only. If you are receiving ZNX-ERC20 you need to
                         use a different address!
                     </template>
                 </f-copy-button>
@@ -46,7 +46,7 @@
 
         <q-r-code-window ref="qrWindow" :address="currentAccount.address">
             <f-message type="warning" with-icon>
-                Warning: Use this address to receive Opera FTM only. If you are receiving FTM-ERC20 you need to use a
+                Warning: Use this address to receive Opera ZNX only. If you are receiving ZNX-ERC20 you need to use a
                 different address!
             </f-message>
         </q-r-code-window>
@@ -61,7 +61,7 @@
         >
             <!--                <icon data="@/assets/svg/nano-s-confirm-tx.svg" width="300" height="91" />-->
             <div class="align-center">
-                <img src="img/nano-s-verify-address.png" alt="fantom nano device" /><br /><br />
+                <img src="img/nano-s-verify-address.png" alt="zilionixx nano device" /><br /><br />
             </div>
 
             <p class="align-center">Please verify following address on your Ledger device:</p>

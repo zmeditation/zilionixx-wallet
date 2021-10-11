@@ -26,7 +26,7 @@
 
                 <div class="row no-collapse">
                     <div class="col-3 f-row-label">Amount</div>
-                    <div class="col">{{ amount }} FTM</div>
+                    <div class="col">{{ amount }} ZNX</div>
                 </div>
 
                 <div class="row no-collapse">

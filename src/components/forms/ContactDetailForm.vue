@@ -130,7 +130,7 @@
 
         <q-r-code-window ref="qrWindow" :address="contactData.address">
             <f-message v-show="blockchain === 'fantom'" type="warning" with-icon>
-                Warning: Use this address to receive Opera FTM only. If you are receiving ZNX-ERC20 you need to use a
+                Warning: Use this address to receive Opera ZNX only. If you are receiving ZNX-ERC20 you need to use a
                 different address!
             </f-message>
         </q-r-code-window>

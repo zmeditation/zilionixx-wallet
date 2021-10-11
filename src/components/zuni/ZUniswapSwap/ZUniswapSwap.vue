@@ -526,7 +526,7 @@ export default {
                     if (params.tokena) {
                         fromToken = TokenPairs.findToken(pairs[0].tokens, params.tokena);
                     } else {
-                        fromToken = TokenPairs.findTokenBySymbol(pairs[0].tokens, 'WFTM') || pairs[0].tokens[0];
+                        fromToken = TokenPairs.findTokenBySymbol(pairs[0].tokens, 'WZNX') || pairs[0].tokens[0];
                     }
                 }
             }

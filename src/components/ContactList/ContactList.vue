@@ -41,8 +41,8 @@
                                             Address copied to clipboard.
                                             <template v-if="contact.blockchain === 'fantom'">
                                                 <br />
-                                                Warning: Use this address to receive Opera FTM only. If you are
-                                                receiving FTM-ERC20 you need to use a different address!
+                                                Warning: Use this address to receive Opera ZNX only. If you are
+                                                receiving ZNX-ERC20 you need to use a different address!
                                             </template>
                                         </template>
                                     </f-copy-button>

@@ -10,7 +10,7 @@
                 >
                     <template #popover-text>
                         Address copied to clipboard. <br />
-                        Warning: Use this address to receive Opera FTM only. If you are receiving FTM-ERC20 you need to
+                        Warning: Use this address to receive Opera ZNX only. If you are receiving ZNX-ERC20 you need to
                         use a different address!
                     </template>
                 </f-copy-button>
@@ -70,7 +70,7 @@
                     Copy Address
                     <template #popover-text>
                         Address copied to clipboard. <br />
-                        Warning: Use this address to receive Opera FTM only. If you are receiving FTM-ERC20 you need to
+                        Warning: Use this address to receive Opera ZNX only. If you are receiving ZNX-ERC20 you need to
                         use a different address!
                     </template>
                 </f-copy-button>
@@ -114,7 +114,7 @@
 
         <q-r-code-window ref="qrWindow" :address="currentAccount.address" @window-hide="onWindowHide">
             <f-message type="warning" with-icon>
-                Warning: Use this address to receive Opera FTM only. If you are receiving FTM-ERC20 you need to use a
+                Warning: Use this address to receive Opera ZNX only. If you are receiving ZNX-ERC20 you need to use a
                 different address!
             </f-message>
         </q-r-code-window>

@@ -3,14 +3,14 @@
         <tx-confirmation
             :tx="tx"
             confirmation-comp-name="stake-confirmation"
-            password-label="Please enter your wallet password to delegate your FTM"
+            password-label="Please enter your wallet password to delegate your ZNX"
             send-button-label="Delegate"
             :on-send-transaction-success="onSendTransactionSuccess"
             @change-component="onChangeComponent"
         >
             <h2 class="cont-with-back-btn">
                 <span>
-                    Delegate FTM - Confirmation <span class="f-steps"><b>2</b> / 2</span>
+                    Delegate ZNX - Confirmation <span class="f-steps"><b>2</b> / 2</span>
                 </span>
                 <button type="button" class="btn light" @click="onBackBtnClick">Back</button>
             </h2>
@@ -26,7 +26,7 @@
                     <div class="col break-word">
                         {{ currentAccount.address }}
                         <span class="f-row-label">
-                            ( {{ toFTM(currentAccount.balance) }} FTM
+                            ( {{ toFTM(currentAccount.balance) }} ZNX
                             <template v-if="currentAccount.name">, {{ currentAccount.name }}</template> )
                         </span>
                     </div>

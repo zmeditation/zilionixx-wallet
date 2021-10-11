@@ -10,10 +10,10 @@ const OPERA_CHAIN_ID = appConfig.chainId;
 /** @type {MetamaskChain} */
 export const OPERA_MAINNET = {
     chainId: appConfig.mainnet.chainId,
-    chainName: 'Fantom Opera Mainnet',
+    chainName: 'Zilionixx Opera Mainnet',
     nativeCurrency: {
-        name: 'Fantom',
-        symbol: 'FTM',
+        name: 'Zilionixx',
+        symbol: 'ZNX',
         decimals: 18,
     },
     rpcUrls: [appConfig.mainnet.rpc],
@@ -23,9 +23,9 @@ export const OPERA_MAINNET = {
 /** @type {MetamaskChain} */
 export const OPERA_TESTNET = {
     chainId: appConfig.testnet.chainId,
-    chainName: 'Fantom Testnet',
+    chainName: 'Zilionixx Testnet',
     nativeCurrency: {
-        name: 'Fantom',
+        name: 'Zilionixx',
         symbol: 'FTM',
         decimals: 18,
     },

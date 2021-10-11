@@ -132,7 +132,7 @@
             <div class="exchange-price">
                 <div class="defi-label">Price</div>
                 <div class="value">
-                    <f-placeholder :content-loaded="!!perPrice" replacement-text="000.00 fUSD per fETH">
+                    <f-placeholder :content-loaded="!!perPrice" replacement-text="000.00 zUSD per fETH">
                         {{ perPrice }}
                     </f-placeholder>
                 </div>
@@ -265,14 +265,14 @@ export default {
             const fromTokenSymbol = this.fromToken.symbol;
             let max = 0;
 
-            if (fromTokenSymbol === 'FUSD') {
+            if (fromTokenSymbol === 'ZUSD') {
                 // subtract 0.5% fee
                 max = this.fromTokenBalance - this.fromTokenBalance * 0.005;
             } else {
                 max = this.fromTokenBalance;
             }
 
-            if (fromTokenSymbol === 'FTM') {
+            if (fromTokenSymbol === 'ZNX') {
                 max -= 2;
             }
 

@@ -1,8 +1,8 @@
 <template>
     <f-card class="receive-coins f-card-double-padding">
-        <h2 class="align-start">Receive Opera FTM</h2>
+        <h2 class="align-start">Receive Opera ZNX</h2>
 
-        <h3 class="align-center h2">Which blockchain are you receiving FTM from?</h3>
+        <h3 class="align-center h2">Which blockchain are you receiving ZNX from?</h3>
 
         <blockchain-picker disable-e-t-h disable-b-n-b @blockchain-pick="onBlockchainPick" />
 
@@ -79,7 +79,7 @@ export default {
         onBlockchainPick(_blockchain) {
             switch (_blockchain) {
                 case 'opera':
-                    this.currentComponent = 'ReceiveFTM';
+                    this.currentComponent = 'ReceiveZNX';
                     break;
                 case 'binance':
                     this.currentComponent = 'ReceiveBNB';

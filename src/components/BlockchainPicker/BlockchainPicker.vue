@@ -12,7 +12,7 @@
                 />
                 <span>
                     <icon
-                        data="@/assets/svg/chain-logos/fantom-active.svg"
+                        data="@/assets/svg/chain-logos/zilionixx.svg"
                         width="64"
                         height="64"
                         original
@@ -20,14 +20,14 @@
                         class="logo-active"
                     />
                     <icon
-                        data="@/assets/svg/chain-logos/fantom-inactive.svg"
+                        data="@/assets/svg/chain-logos/zilionixx.svg"
                         width="64"
                         height="64"
                         original
                         aria-hidden="true"
                         class="logo-inactive"
                     />
-                    <span class="title">Fantom Opera</span>
+                    <span class="title">Zilionixx Opera</span>
                 </span>
             </label>
         </li>

@@ -8,7 +8,7 @@
             no-currency
             v-bind="$attrs"
         />
-        <span v-if="!noCurrency"> FTM</span>
+        <span v-if="!noCurrency"> ZNX</span>
     </span>
 </template>
 

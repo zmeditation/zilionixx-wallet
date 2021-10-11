@@ -188,7 +188,7 @@ export default {
                 },
                 {
                     name: 'amount_fusd',
-                    label: 'Amount (fUSD)',
+                    label: 'Amount (zUSD)',
                     sortDir: 'desc',
                     sortFunc: (_itemProp, _direction = 'asc') => {
                         return (_a, _b) => {
